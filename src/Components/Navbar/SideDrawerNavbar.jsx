@@ -88,12 +88,12 @@ function SideDrawerNavbar() {
                         onClick={() => {
                           console.log("resume btn clicked");
                           window.open(
-                            "https://drive.google.com/file/d/1dS9Bh3tYen6oz6JCxEjsQOmOheJ3m-Uc/view?usp=share_link",
+                            "https://drive.google.com/file/d/1lFycavzJaYExlcNPBhWmXXuKScE6WGY3/view?usp=sharing",
                             "blank"
                           );
                         }}
                         href={Resume}
-                        download="Rajendra_Patel_Resume">
+                        download="Arpit-Kumar-Resume">
                         <Flex
                           align="center"
                           p="4"
