@@ -8,7 +8,7 @@ export default function Skills() {
     AOS.init();
   }, []);
   return (
-    <>
+    <div id="skills">
       <div id="Skills" className={style.outer_box}>
       
           <h1 className={style.main_heading}>Technical Skills</h1>
@@ -18,11 +18,13 @@ export default function Skills() {
           <div>
             <h1>Languages</h1>
             <div className={style.language_logo}>
-              <div data-aos="flip-left">
-                <img src="./js.png" alt="JavaScript" />
+              <div data-aos="flip-left" className="skills-card">
+                <img src="./js.png" alt="JavaScript" className="skills-card-img"/>
+                <h3 className="skills-card-name">JavaScript</h3>
               </div>
-              <div data-aos="flip-left" style={{ width: "40%" }}>
-                <img src="./ts.png" alt="TypeScript" />
+              <div data-aos="flip-left" style={{ width: "40%" }} className="skills-card">
+                <img src="./ts.png" alt="TypeScript" className="skills-card-img"/>
+                <h3 className="skills-card-name">TypeScript</h3>
               </div>
             </div>
             <p
@@ -40,17 +42,21 @@ export default function Skills() {
             <h1>Front-End</h1>
             <div className={style.frontend_logo}>
               {" "}
-              <div data-aos="flip-left">
-                <img src="./html.png" alt="html" />
+              <div data-aos="flip-left" className="skills-card">
+                <img src="./html.png" alt="html" className="skills-card-img"/>
+                <h3 className="skills-card-name">HTML</h3>
               </div>
-              <div data-aos="flip-left">
-                <img src="./css.png" alt="css" />
+              <div data-aos="flip-left"  className="skills-card">
+                <img src="./css.png" alt="css" className="skills-card-img"/>
+                <h3 className="skills-card-name">CSS</h3>
               </div>
-              <div data-aos="flip-left">
-                <img src="./react.png" alt="React" />
+              <div data-aos="flip-left" className="skills-card">
+                <img src="./react.png" alt="React" className="skills-card-img"/>
+                <h3 className="skills-card-name">React</h3>
               </div>
-              <div data-aos="flip-left">
-                <img src="./next.png" alt="Next.js" />
+              <div data-aos="flip-left" className="skills-card">
+                <img src="./next.png" alt="Next.js" className="skills-card-img"/>
+                <h3 className="skills-card-name">Next.js</h3>
               </div>
             </div>
             <p
@@ -68,11 +74,13 @@ export default function Skills() {
           <div className={style.backend}>
             <h1>Back-End</h1>
             <div className={style.backend_logo}>
-              <div data-aos="flip-left">
-                <img src="./ex.png" alt="express" />
+              <div data-aos="flip-left" className="skills-card">
+                <img src="./ex.png" alt="express"  className="skills-card-img"/>
+                <h3 className="skills-card-name">Express</h3>
               </div>
-              <div data-aos="flip-left">
-                <img src="./mongodb.png" alt="mongodb" />
+              <div data-aos="flip-left" className="skills-card">
+                <img src="./mongodb.png" alt="mongodb"  className="skills-card-img"/>
+                <h3 className="skills-card-name">MongoDB</h3>
               </div>
             </div>
             <p
@@ -90,11 +98,13 @@ export default function Skills() {
           <div className={style.tools}>
             <h1>Tools</h1>
             <div className={style.tools_logo}>
-              <div data-aos="flip-left">
-                <img src="./git.png" alt="git" />
+              <div data-aos="flip-left" className="skills-card">
+                <img src="./git.png" alt="git" className="skills-card-img"/>
+                <h3 className="skills-card-name">Git</h3>
               </div>
-              <div data-aos="flip-left">
-                <img src="./github.png" alt="github" />
+              <div data-aos="flip-left" className="skills-card">
+                <img src="./github.png" alt="github" className="skills-card-img"/>
+                <h3 className="skills-card-name">Github</h3>
               </div>
             </div>
             <p
@@ -110,6 +120,6 @@ export default function Skills() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

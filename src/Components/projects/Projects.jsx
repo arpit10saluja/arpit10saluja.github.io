@@ -5,6 +5,7 @@ import { projectsData } from "./ProjectsData";
 
 const Projects = () => {
   return (
+    <div id="projects">
     <Box id="Projects" w={"90%"} m="auto" mt={"3%"}>
       <Heading
         textAlign={"center"}
@@ -26,10 +27,11 @@ const Projects = () => {
             description={project.description}
             link={project.link}
             github={project.github}
-          />
+            />
         ))}
       </Grid>
     </Box>
+  </div>
   );
 };
 

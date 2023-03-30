@@ -13,16 +13,18 @@ export default function About() {
   }, []);
 
   return (
+    <diV id="about" className="about section">
     <div id="About" className={style.homepage} >
       <div className={style.image}>
         {/* <BookType /> */}
-        <img  src="https://avatars.githubusercontent.com/u/109855468?v=4" alt="profile_img" />
+        <img  src="https://avatars.githubusercontent.com/u/109855468?v=4" alt="profile_img"className="home-img" />
       </div>
       <div className={style.name}>
           <h1>Hello,</h1>
         <h1>
           {" "}
           <Typewriter
+          id="user-detail-name"
             options={{
               strings: ["I'm Arpit Kumar"],
               autoStart: true,
@@ -31,6 +33,7 @@ export default function About() {
             }}
             />
         </h1>
+        {/* <h1>Frontend Developer</h1> */}
 
         <div className={style.flipBox} >
           <div className={style.flip}>
@@ -46,9 +49,8 @@ export default function About() {
           </div>
         </div>
 
-        {/* <h1>Frontend Developer</h1> */}
         
-          <p>
+          <p id="user-detail-intro">
           A aspiring and self motivated full stack web developer with
           expertise in creating ready to use website. Team
           collaborator with good interpersonal skill, Looking for a
@@ -92,5 +94,6 @@ export default function About() {
         </div>
       </div>
     </div>
+  </diV>
   );
 }

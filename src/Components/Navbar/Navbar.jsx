@@ -19,8 +19,9 @@ import Skills from "../skills";
 import GithubStats from "../github_stats";
 import Projects from "../projects/Projects";
 import Contact from "../contactForm/Contact";
+import Home from "../Home";
 
-const Links = ["About", "Skills", "Projects", "Contact", "Resume"];
+const Links = ["Home","About", "Skills", "Projects", "Contact", "Resume",];
 
 export default function Simple() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -44,64 +45,160 @@ export default function Simple() {
               as={"nav"}
               spacing={10}
               display={{ base: "none", md: "flex" }}>
-              {Links.map((link) => (
-                <>
-                  {link === "Resume" ? (
-                    <>
-                      <Link
-                        onClick={() => {
-                          window.open(
-                            "https://drive.google.com/file/d/1lFycavzJaYExlcNPBhWmXXuKScE6WGY3/view?usp=sharing"
-                          );
-                        }}
-                        href={Resume}
-                        download="Arpit-Kumar-Resume"
-                        key={link}
-                        px={2}
-                        py={1}
-                        rounded={"md"}
-                        _hover={{
-                          textDecoration: "none",
-                        }}>
-                        <Text
-                          _hover={{
-                            color: "red",
-                          }}
-                          fontSize="18px"
-                          fontWeight="semibold">
-                          {" "}
-                          {link}
-                        </Text>
-                      </Link>
-                    </>
-                  ) : (
-                    <>
-                      <Link
-                        to={link}
-                        smooth={true}
-                        duration={500}
-                        offset={-90}
-                        key={link}
-                        px={2}
-                        rounded={"md"}
-                        _hover={{
-                          textDecoration: "none",
-                        }}>
-                        <Text
-                          cursor={"pointer"}
-                          _hover={{
-                            color: "red",
-                          }}
-                          fontSize="18px"
-                          fontWeight="semibold">
-                          {" "}
-                          {link}
-                        </Text>
-                      </Link>
-                    </>
-                  )}
-                </>
-              ))}
+
+            // Home Link
+              <Link
+                id="nav-link home"
+                to={"About"}
+                smooth={true}
+                duration={500}
+                offset={-90}
+                px={2}
+                rounded={"md"}
+                _hover={{
+                  textDecoration: "none",
+                }}>
+                <Text
+                  cursor={"pointer"}
+                  _hover={{
+                    color: "red",
+                  }}
+                  fontSize="18px"
+                  fontWeight="semibold">
+                  {" "}
+                  {"Home"}
+                </Text>
+              </Link>
+
+              // About Link
+              <Link
+                id="nav-link about"
+                to={"About"}
+                smooth={true}
+                duration={500}
+                offset={-90}
+                px={2}
+                rounded={"md"}
+                _hover={{
+                  textDecoration: "none",
+                }}>
+                <Text
+                  cursor={"pointer"}
+                  _hover={{
+                    color: "red",
+                  }}
+                  fontSize="18px"
+                  fontWeight="semibold">
+                  {" "}
+                  {"About"}
+                </Text>
+              </Link>
+
+
+              //Skills  Link
+              <Link
+                id="nav-link skills"
+                to={"Skills"}
+                smooth={true}
+                duration={500}
+                offset={-90}
+                px={2}
+                rounded={"md"}
+                _hover={{
+                  textDecoration: "none",
+                }}>
+                <Text
+                  cursor={"pointer"}
+                  _hover={{
+                    color: "red",
+                  }}
+                  fontSize="18px"
+                  fontWeight="semibold">
+                  {" "}
+                  {"Skills"}
+                </Text>
+              </Link>
+
+              //Projects  Link
+              <Link
+                id="nav-link projects"
+                to={"Projects"}
+                smooth={true}
+                duration={500}
+                offset={-90}
+                px={2}
+                rounded={"md"}
+                _hover={{
+                  textDecoration: "none",
+                }}>
+                <Text
+                  cursor={"pointer"}
+                  _hover={{
+                    color: "red",
+                  }}
+                  fontSize="18px"
+                  fontWeight="semibold">
+                  {" "}
+                  {"Projects"}
+                </Text>
+              </Link>
+
+              //Contact  Link
+              <Link
+                id="nav-link contact"
+                to={"Contact"}
+                smooth={true}
+                duration={500}
+                offset={-90}
+                px={2}
+                rounded={"md"}
+                _hover={{
+                  textDecoration: "none",
+                }}>
+                <Text
+                  cursor={"pointer"}
+                  _hover={{
+                    color: "red",
+                  }}
+                  fontSize="18px"
+                  fontWeight="semibold">
+                  {" "}
+                  {"Contact"}
+                </Text>
+              </Link>
+
+// Resume Link
+              <Link
+                onClick={() => {
+                  window.open(
+                    "https://drive.google.com/file/d/1lFycavzJaYExlcNPBhWmXXuKScE6WGY3/view?usp=sharing"
+                  );
+                }}
+                href={Resume}
+                download="Arpit-Kumar-Resume"
+                px={2}
+                py={1}
+                rounded={"md"}
+                _hover={{
+                  textDecoration: "none",
+                }}>
+                <Text
+                  _hover={{
+                    color: "red",
+                  }}
+                  fontSize="18px"
+                  fontWeight="semibold">
+                  {" "}
+                  {"Resume"}
+                </Text>
+              </Link>
+
+
+
+
+
+
+            
             </HStack>
           </HStack>
           <Box alignItems={"center"} mr="20px">
@@ -128,3 +225,64 @@ export default function Simple() {
     </Box>
   );
 }
+
+
+
+// {Links.map((link) => (
+//   <>
+//     {link === "Resume" ? (
+//       <>
+//         <Link
+//           onClick={() => {
+//             window.open(
+//               "https://drive.google.com/file/d/1lFycavzJaYExlcNPBhWmXXuKScE6WGY3/view?usp=sharing"
+//             );
+//           }}
+//           href={Resume}
+//           download="Arpit-Kumar-Resume"
+//           key={link}
+//           px={2}
+//           py={1}
+//           rounded={"md"}
+//           _hover={{
+//             textDecoration: "none",
+//           }}>
+//           <Text
+//             _hover={{
+//               color: "red",
+//             }}
+//             fontSize="18px"
+//             fontWeight="semibold">
+//             {" "}
+//             {link}
+//           </Text>
+//         </Link>
+//       </>
+//     ) : (
+//       <>
+//         <Link
+//           to={link}
+//           smooth={true}
+//           duration={500}
+//           offset={-90}
+//           key={link}
+//           px={2}
+//           rounded={"md"}
+//           _hover={{
+//             textDecoration: "none",
+//           }}>
+//           <Text
+//             cursor={"pointer"}
+//             _hover={{
+//               color: "red",
+//             }}
+//             fontSize="18px"
+//             fontWeight="semibold">
+//             {" "}
+//             {link}
+//           </Text>
+//         </Link>
+//       </>
+//     )}
+//   </>  
+// ))}

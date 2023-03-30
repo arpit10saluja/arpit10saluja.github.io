@@ -30,6 +30,7 @@ const ProjectCard = ({
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
+    <div className="project-card">
     <Box
       color={{ base: "black", dark: "white" }} // change text color based on color mode
       bg={{ base: "gray.50", dark: "gray.800" }} // change background color based on color mode
@@ -47,29 +48,29 @@ const ProjectCard = ({
         src={colorMode === "dark" ? project_img_dark : project_img}
         alt={title}
         w="100%"
-      />
+        />
       <Box
         padding="1rem"
         data-aos={index % 2 === 0 ? "fade-left" : "fade-right"}>
-        <Heading size="md" marginBottom="0.5rem">
+        <Heading size="md" marginBottom="0.5rem" className="project-title">
           <h3>{title}</h3>
         </Heading>
-        <Text marginBottom="1rem">{description}</Text>
-        <HStack marginBottom="1rem">
+        <Text marginBottom="1rem" className="project-description">{description}</Text>
+        <HStack marginBottom="1rem" className="project-tech-stack">
           {tech_stack.map((tech) => (
        
-              <Image
-                h={{ base: "24px", md: "32px" }}
-                w={{ base: "24px", md: "32px" }}
-                src={tech.url}
-                alt={tech.name}
+            <Image
+            h={{ base: "24px", md: "32px" }}
+            w={{ base: "24px", md: "32px" }}
+            src={tech.url}
+            alt={tech.name}
               />
     
           ))}
         </HStack>
 
         <HStack spacing="1rem">
-          <a href={link} target="_blank" rel="noreferrer">
+          <a href={link} target="_blank" rel="noreferrer" className="project-deployed-link">
             <Button
               variant={"outline"}
               colorScheme="blue"
@@ -78,7 +79,7 @@ const ProjectCard = ({
               Check it out!
             </Button>
           </a>
-          <a href={github} target="_blank" rel="noreferrer">
+          <a href={github} target="_blank" rel="noreferrer" className="project-github-link">
             <Button
               variant={"outline"}
               colorScheme="blue"
@@ -90,6 +91,7 @@ const ProjectCard = ({
         </HStack>
       </Box>
     </Box>
+  </div>
   );
 };
 

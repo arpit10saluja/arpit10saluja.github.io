@@ -1,11 +1,15 @@
 import React, { Fragment } from "react";
 import "./Contact.css";
 import { useColorMode } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
+import { HStack } from "@chakra-ui/react";
 
 const Contact = () => {
   const { colorMode } = useColorMode();
 
   return (
+    <div id="contact">
+
     <div id="Contact" style={{ color: "black" }}>
       {" "}
       <Fragment>
@@ -13,6 +17,7 @@ const Contact = () => {
           <div className="contact-heading">
             <h2>Contact Me </h2>
           </div>
+       
           <div className="container">
             <div className="row">
               <div className="column">
@@ -31,7 +36,7 @@ const Contact = () => {
                     <div className="icon">
                       <i className="fa-solid fa-phone"></i>
                     </div>
-                    <div className="text">
+                    <div className="text" id="contact-phone">
                       <h5>Contact me</h5>
                       <p>+917983760582</p>
                     </div>
@@ -41,9 +46,27 @@ const Contact = () => {
                     <div className="icon">
                       <i className="fa-regular fa-envelope"></i>
                     </div>
-                    <div className="text">
+                    <div className="text" id="contact-email">
                       <h5>Email</h5>
                       <p>arpitsaluja1234@gmail.com</p>
+                    </div>
+                  </div>
+                  <div className="contact-widget-item">
+                    <div className="icon">
+                      <i className="fa-regular fa-envelope"></i>
+                    </div>
+                    <div className="text" id="contact-github">
+                      <h5>Github</h5>
+                      <Link to={"https://github.com/arpit10saluja"}>@arpit10saluja</Link>
+                    </div>
+                  </div>
+                  <div className="contact-widget-item">
+                    <div className="icon">
+                      <i className="fa-regular fa-envelope"></i>
+                    </div>
+                    <div className="text" id="contact-linkedin">
+                      <h5>Linkedin</h5>
+                      <Link to={"https://www.linkedin.com/in/arpitsaluja1234/"}>@arpitsaluja1234</Link>
                     </div>
                   </div>
                 </div>
@@ -75,6 +98,7 @@ const Contact = () => {
         </section>
       </Fragment>
     </div>
+  </div>
   );
 };
 
