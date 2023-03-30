@@ -1,0 +1,35 @@
+.outer_box {
+  border: 0px solid red;
+  height: 600px;
+  background-image: url(https://img.freepik.com/free-photo/background_53876-32169.jpg?w=2000);
+  margin-top: 5%;
+}
+.outer_box > img {
+  height: 100%;
+  width: 100%;
+}
+.intro {
+  border: 1px solid red;
+  height: 100%;
+  align-items: center;
+  margin: auto;
+}
+.name {
+  border: 1px solid rgb(0, 72, 255);
+  width: 60%;
+  font-size: 80px;
+  margin: auto;
+  margin-top: 8%;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+}
+.role {
+  border: 1px solid rgb(255, 0, 140);
+  font-size: 50px;
+  width: 60%;
+  margin: auto;
+  color: white;
+  font-weight: 450;
+  text-align: center;
+}

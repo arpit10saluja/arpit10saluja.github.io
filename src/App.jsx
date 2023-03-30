@@ -1,12 +1,10 @@
 import './App.css';
-import {AllRoutes} from './Components/AllRoute';
-import Navbar from './Components/Navbar';
+import Simple from './Components/Navbar/Navbar';
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      {/* <AllRoutes/> */}
+      <Simple/>
     </div>
   );
 }
