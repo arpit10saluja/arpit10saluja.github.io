@@ -13,7 +13,7 @@ export default function About() {
   }, []);
 
   return (
-    <div id="About" className={style.homepage}>
+    <div id="About" className={style.homepage} >
       <div className={style.image}>
         {/* <BookType /> */}
         <img  src="https://avatars.githubusercontent.com/u/109855468?v=4" alt="profile_img" />
@@ -29,10 +29,10 @@ export default function About() {
               loop: true,
               deleteSpeed: 50,
             }}
-          />
+            />
         </h1>
 
-        <div className={style.flipBox}>
+        <div className={style.flipBox} >
           <div className={style.flip}>
             <div>
               <div style={{ color: "white" }}>Quick Learner</div>
@@ -62,11 +62,11 @@ export default function About() {
               window.open(
                 "https://drive.google.com/file/d/1lFycavzJaYExlcNPBhWmXXuKScE6WGY3/view?usp=sharing",
                 "blank"
-              );
-            }}
-            href={Resume}
-            download="Arpit-Kumar-Resume"
-            className={style.ResumeBtn}>
+                );
+              }}
+              href={Resume}
+              download="Arpit-Kumar-Resume"
+              className={style.ResumeBtn}>
             <span></span>
             <span></span>
             <span></span>
