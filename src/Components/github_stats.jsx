@@ -23,18 +23,20 @@ export default function GithubStats() {
     
 
         <div className={style.flex_box}>
-          <div data-aos="fade-right" id="github-streak-stats">
-            <img 
+          <div data-aos="fade-right" >
+            <img  
               src={
                 colorMode === "dark"
                   ? "https://github-readme-stats.vercel.app/api?username=arpit10saluja&show_icons=true&locale=en&theme=tokyonight"
                   : "https://github-readme-stats.vercel.app/api?username=arpit10saluja&show_icons=true&locale=en"
               }
               alt="stats"
+              id="github-streak-stats"
             />
           </div>
           <div data-aos="fade-left">
-            <img
+            <img 
+            id="github-stats-card"
               src={
                 colorMode === "dark"
                   ? "https://streak-stats.demolab.com/?user=arpit10saluja&theme=dark"
@@ -46,7 +48,7 @@ export default function GithubStats() {
         </div>
       </div>
       
-      <div data-aos="fade-left" id="github-top-langs">
+      <div data-aos="fade-left" >
             <img
               src={
                 colorMode === "dark"
@@ -54,6 +56,7 @@ export default function GithubStats() {
                   : "https://github-readme-stats.vercel.app/api/top-langs/?username=arpit10saluja"
               }
               alt="Top Lang"
+              id="github-top-langs"
             />
     </div>
       
