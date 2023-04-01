@@ -27,8 +27,8 @@ export default function GithubStats() {
             <img  
               src={
                 colorMode === "dark"
-                  ? "https://github-readme-stats.vercel.app/api?username=arpit10saluja&show_icons=true&locale=en&theme=tokyonight"
-                  : "https://github-readme-stats.vercel.app/api?username=arpit10saluja&show_icons=true&locale=en"
+                  ? "https://github-readme-streak-stats.herokuapp.com?user=arpit10saluja&theme=dark"
+                  : "https://github-readme-streak-stats.herokuapp.com?user=arpit10saluja"
               }
               alt="stats"
               id="github-streak-stats"
@@ -39,8 +39,8 @@ export default function GithubStats() {
             id="github-stats-card"
               src={
                 colorMode === "dark"
-                  ? "https://streak-stats.demolab.com/?user=arpit10saluja&theme=dark"
-                  : "https://streak-stats.demolab.com/?user=arpit10saluja"
+                  ? "https://github-readme-stats.vercel.app/api?username=arpit10saluja&theme=dark"
+                  : "https://github-readme-stats.vercel.app/api?username=arpit10saluja"
               }
               alt="contribution"
             />
