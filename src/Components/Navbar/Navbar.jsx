@@ -49,6 +49,7 @@ export default function Simple() {
             // Home Link
               <Link
                 id="nav-link home"
+                className="nav-link.home"
                 to={"About"}
                 smooth={true}
                 duration={500}
@@ -174,6 +175,7 @@ export default function Simple() {
                     "https://drive.google.com/file/d/1lFycavzJaYExlcNPBhWmXXuKScE6WGY3/view?usp=sharing"
                   );
                 }}
+                id="resume-button-1"
                 href={Resume}
                 download="Arpit-Kumar-Resume"
                 px={2}

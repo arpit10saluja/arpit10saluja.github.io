@@ -21,10 +21,10 @@ export default function About() {
       </div>
       <div className={style.name}>
           <h1>Hello,</h1>
-        <h1>
+        <h1  id="user-detail-name">
           {" "}
           <Typewriter
-          id="user-detail-name"
+         
             options={{
               strings: ["I'm Arpit Kumar"],
               autoStart: true,
@@ -66,6 +66,7 @@ export default function About() {
                 "blank"
                 );
               }}
+              id="resume-button-2"
               href={Resume}
               download="Arpit-Kumar-Resume"
               className={style.ResumeBtn}>

@@ -23,8 +23,8 @@ export default function GithubStats() {
     
 
         <div className={style.flex_box}>
-          <div data-aos="fade-right">
-            <img
+          <div data-aos="fade-right" id="github-streak-stats">
+            <img 
               src={
                 colorMode === "dark"
                   ? "https://github-readme-stats.vercel.app/api?username=arpit10saluja&show_icons=true&locale=en&theme=tokyonight"
@@ -45,6 +45,22 @@ export default function GithubStats() {
           </div>
         </div>
       </div>
+      
+      <div data-aos="fade-left" id="github-top-langs">
+            <img
+              src={
+                colorMode === "dark"
+                  ? "https://github-readme-stats.vercel.app/api/top-langs/?username=arpit10saluja&theme=dark"
+                  : "https://github-readme-stats.vercel.app/api/top-langs/?username=arpit10saluja"
+              }
+              alt="Top Lang"
+            />
+    </div>
+      
+   
+
+
+
       <div className={style.outer_box}>
       
           <h1 className={style.main_heading}>My Github Calender</h1>
