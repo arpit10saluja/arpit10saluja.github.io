@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.e8857c75.css",
-    "main.js": "/static/js/main.134eb62f.js",
+    "main.js": "/static/js/main.30a54406.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/Arpit-Kumar-Resume.pdf": "/static/media/Arpit-Kumar-Resume.648d241c01deabc23bdb.pdf",
     "index.html": "/index.html",
     "main.e8857c75.css.map": "/static/css/main.e8857c75.css.map",
-    "main.134eb62f.js.map": "/static/js/main.134eb62f.js.map",
+    "main.30a54406.js.map": "/static/js/main.30a54406.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e8857c75.css",
-    "static/js/main.134eb62f.js"
+    "static/js/main.30a54406.js"
   ]
 }
