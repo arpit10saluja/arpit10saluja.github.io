@@ -32,6 +32,7 @@ export default function GithubStats() {
               }
               alt="stats"
               id="github-streak-stats"
+              
             />
           </div>
           <div data-aos="fade-left">
@@ -48,7 +49,7 @@ export default function GithubStats() {
         </div>
       </div>
       
-      <div data-aos="fade-left" >
+      <div data-aos="fade-left"  className={style.flex_box}>
             <img
               src={
                 colorMode === "dark"

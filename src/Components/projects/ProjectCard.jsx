@@ -56,10 +56,10 @@ const ProjectCard = ({
           <h3>{title}</h3>
         </Heading>
         <Text marginBottom="1rem" className="project-description">{description}</Text>
-        <HStack marginBottom="1rem" className="project-tech-stack">
+        <HStack marginBottom="1rem" >
           {tech_stack.map((tech) => (
        
-            <Image
+            <Image className="project-tech-stack"
             h={{ base: "24px", md: "32px" }}
             w={{ base: "24px", md: "32px" }}
             src={tech.url}

@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import {
   Box,
   Flex,
@@ -48,7 +47,7 @@ export default function Simple() {
 
             // Home Link
               <Link
-                id="nav-link home"
+                id="nav-link.home"
                 className="nav-link.home"
                 to={"About"}
                 smooth={true}
@@ -169,10 +168,17 @@ export default function Simple() {
               </Link>
 
 // Resume Link
-              <Link
+              <Text
+                  _hover={{
+                    color: "red",
+                  }}
+                  fontSize="18px"
+                  fontWeight="semibold"> 
+              <a
                 onClick={() => {
                   window.open(
-                    "https://drive.google.com/file/d/1lFycavzJaYExlcNPBhWmXXuKScE6WGY3/view?usp=sharing"
+                    "https://drive.google.com/file/d/1lFycavzJaYExlcNPBhWmXXuKScE6WGY3/view?usp=sharing",
+                    "blank"
                   );
                 }}
                 id="resume-button-1"
@@ -184,21 +190,9 @@ export default function Simple() {
                 _hover={{
                   textDecoration: "none",
                 }}>
-                <Text
-                  _hover={{
-                    color: "red",
-                  }}
-                  fontSize="18px"
-                  fontWeight="semibold">
-                  {" "}
-                  {"Resume"}
-                </Text>
-              </Link>
-
-
-
-
-
+                Resume
+              </a>
+              </Text>
 
             
             </HStack>
@@ -215,15 +209,7 @@ export default function Simple() {
         </Flex>
       </Box>
 
-      <Box w="full" margin={"auto"}>
-        <About />
-        <Skills />
-        <GithubStats />
-        <Projects />
-        <Fragment>
-          <Contact />
-        </Fragment>
-      </Box>
+    
     </Box>
   );
 }

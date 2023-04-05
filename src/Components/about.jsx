@@ -13,8 +13,8 @@ export default function About() {
   }, []);
 
   return (
-    <diV id="about" className="about section">
-    <div id="About" className={style.homepage} >
+      <div id="about" className="about section">
+    <div id="about" className={style.about} >
       <div className={style.image}>
         {/* <BookType /> */}
         <img  src="https://avatars.githubusercontent.com/u/109855468?v=4" alt="profile_img"className="home-img" />
@@ -95,6 +95,6 @@ export default function About() {
         </div>
       </div>
     </div>
-  </diV>
+  </div>
   );
 }
