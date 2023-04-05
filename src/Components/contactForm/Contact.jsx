@@ -2,7 +2,6 @@ import React, { Fragment } from "react";
 import "./Contact.css";
 import { useColorMode } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import { HStack } from "@chakra-ui/react";
 
 const Contact = () => {
   const { colorMode } = useColorMode();
