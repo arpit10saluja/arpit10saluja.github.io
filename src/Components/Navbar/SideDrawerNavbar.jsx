@@ -1,4 +1,3 @@
-import { useState } from "react";
 import {
   Box,
   CloseButton,
@@ -31,6 +30,7 @@ import Typewriter from "typewriter-effect";
 import Resume from "../../resume/Arpit-Kumar-Resume.pdf";
 
 // const Links = ["About", "Skills", "Projects", "Contact", "Resume"];
+
 const Links = [
   { name: "About", icon: FiHome },
   { name: "Skills", icon: FiTrendingUp },
@@ -82,7 +82,8 @@ function SideDrawerNavbar() {
                 {Links.map((link) => (
                   <>
                     {link.name === "Resume" ? (
-                      <Link
+                      <Link key={link.name}
+                      to=""
                         style={{ textDecoration: "none" }}
                         _focus={{ boxShadow: "none" }}
                         onClick={() => {

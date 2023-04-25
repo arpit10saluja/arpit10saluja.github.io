@@ -6,6 +6,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import Resume from "../resume/Arpit-Kumar-Resume.pdf";
 import Typewriter from "typewriter-effect";
+import { Text } from "@chakra-ui/react";
 
 export default function About() {
   React.useEffect(() => {
@@ -23,15 +24,15 @@ export default function About() {
           <h1>Hello,</h1>
         <h1  id="user-detail-name">
           {" "}
-          <Typewriter
-         
+          <Text>I'm Arpit Kumar</Text>
+          {/* <Typewriter
             options={{
               strings: ["I'm Arpit Kumar"],
               autoStart: true,
               loop: true,
               deleteSpeed: 50,
             }}
-            />
+            /> */}
         </h1>
         {/* <h1>Frontend Developer</h1> */}
 

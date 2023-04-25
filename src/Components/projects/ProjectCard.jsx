@@ -6,7 +6,7 @@ import {
   Image,
   Text,
   useColorMode,
-  useColorModeValue,
+//  { // useColorModeValue,}
 } from "@chakra-ui/react";
 import React from "react";
 import { BsGithub } from "react-icons/bs";
@@ -56,10 +56,10 @@ const ProjectCard = ({
           <h3>{title}</h3>
         </Heading>
         <Text marginBottom="1rem" className="project-description">{description}</Text>
-        <HStack marginBottom="1rem" >
+        <HStack marginBottom="1rem" className="project-tech-stack">
           {tech_stack.map((tech) => (
        
-            <Image className="project-tech-stack"
+            <Image 
             h={{ base: "24px", md: "32px" }}
             w={{ base: "24px", md: "32px" }}
             src={tech.url}

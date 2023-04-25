@@ -10,6 +10,7 @@ import {
 } from "@chakra-ui/react";
 import { Link } from "react-scroll";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
+import { Fragment } from "react";
 
 import About from "../about";
 import SideDrawerNavbar from "./SideDrawerNavbar";
@@ -20,7 +21,7 @@ import Projects from "../projects/Projects";
 import Contact from "../contactForm/Contact";
 import Home from "../Home";
 
-const Links = ["Home","About", "Skills", "Projects", "Contact", "Resume",];
+// const Links = ["Home","About", "Skills", "Projects", "Contact", "Resume",];
 
 export default function Simple() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -48,8 +49,8 @@ export default function Simple() {
             // Home Link
               <Link
                 id="nav-link.home"
-                className="nav-link.home"
-                to={"About"}
+                className="nav-link home"
+                to={"Home"}
                 smooth={true}
                 duration={500}
                 offset={-90}
@@ -72,8 +73,8 @@ export default function Simple() {
 
               // About Link
               <Link
-                id="nav-link about"
-                to={"About"}
+                className="nav-link about"
+                to={"about"}
                 smooth={true}
                 duration={500}
                 offset={-90}
@@ -97,7 +98,7 @@ export default function Simple() {
 
               //Skills  Link
               <Link
-                id="nav-link skills"
+                className="nav-link skills"
                 to={"Skills"}
                 smooth={true}
                 duration={500}
@@ -121,7 +122,7 @@ export default function Simple() {
 
               //Projects  Link
               <Link
-                id="nav-link projects"
+                className="nav-link projects"
                 to={"Projects"}
                 smooth={true}
                 duration={500}
@@ -145,7 +146,7 @@ export default function Simple() {
 
               //Contact  Link
               <Link
-                id="nav-link contact"
+                className="nav-link contact"
                 to={"Contact"}
                 smooth={true}
                 duration={500}
@@ -181,6 +182,7 @@ export default function Simple() {
                     "blank"
                   );
                 }}
+                className="nav-link resume"
                 id="resume-button-1"
                 href={Resume}
                 download="Arpit-Kumar-Resume"
@@ -208,8 +210,18 @@ export default function Simple() {
           </Box>
         </Flex>
       </Box>
-
-    
+      <Box w="full" margin={"auto"}>
+        <Home>
+          <About />
+        </Home>
+        <Skills />
+        <GithubStats />
+        <Projects />
+        <Fragment>
+          <Contact />
+        </Fragment>
+      </Box>
+  
     </Box>
   );
 }

@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import "./Contact.css";
 import { useColorMode } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Contact = () => {
   const { colorMode } = useColorMode();
@@ -23,7 +24,7 @@ const Contact = () => {
                 <div className="contact-widget ">
                   <div className="contact-widget-item">
                     <div className="icon">
-                      <i className="fa-solid fa-location-dot"></i>
+                     <FontAwesomeIcon icon="fa-regular fa-location-dot" style={{color: "#000000",}} />
                     </div>
                     <div className="text">
                       <h5>Address</h5>
@@ -37,7 +38,7 @@ const Contact = () => {
                     </div>
                     <div className="text" id="contact-phone">
                       <h5>Contact me</h5>
-                      <p>+917983760582</p>
+                      <p>+91 7983760582</p>
                     </div>
                   </div>
 
@@ -56,7 +57,7 @@ const Contact = () => {
                     </div>
                     <div className="text" id="contact-github">
                       <h5>Github</h5>
-                      <Link to={"https://github.com/arpit10saluja"}>@arpit10saluja</Link>
+                      <Link to={"https://github.com/arpit10saluja"} target="blank">@arpit10saluja</Link>
                     </div>
                   </div>
                   <div className="contact-widget-item">
@@ -65,7 +66,7 @@ const Contact = () => {
                     </div>
                     <div className="text" id="contact-linkedin">
                       <h5>Linkedin</h5>
-                      <Link to={"https://www.linkedin.com/in/arpitsaluja1234/"}>@arpitsaluja1234</Link>
+                      <Link to={"https://www.linkedin.com/in/arpitsaluja1234/"} target="blank">@arpitsaluja1234</Link>
                     </div>
                   </div>
                 </div>
