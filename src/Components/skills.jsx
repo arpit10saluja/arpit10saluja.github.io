@@ -55,8 +55,8 @@ export default function Skills() {
                 <h3 className="skills-card-name">React</h3>
               </div>
               <div data-aos="flip-left" className="skills-card">
-                <img src="./next.png" alt="Next.js" className="skills-card-img"/>
-                <h3 className="skills-card-name">Next.js</h3>
+                <img src="./node.png" alt="Next.js" className="skills-card-img"/>
+                <h3 className="skills-card-name">Node.js</h3>
               </div>
             </div>
             <p

@@ -82,43 +82,25 @@ function SideDrawerNavbar() {
                 {Links.map((link) => (
                   <>
                     {link.name === "Resume" ? (
-                      <Link key={link.name}
-                      to=""
-                        style={{ textDecoration: "none" }}
-                        _focus={{ boxShadow: "none" }}
-                        onClick={() => {
-                          console.log("resume btn clicked");
-                          window.open(
-                            "https://drive.google.com/file/d/1lFycavzJaYExlcNPBhWmXXuKScE6WGY3/view?usp=sharing",
-                            "blank"
-                          );
-                        }}
-                        href={Resume}
-                        download="Arpit-Kumar-Resume">
-                        <Flex
-                          align="center"
-                          p="4"
-                          mx="4"
-                          borderRadius="lg"
-                          role="group"
-                          cursor="pointer"
-                          _hover={{
-                            bg: "cyan.400",
-                            color: "white",
-                          }}>
-                          {
-                            <Icon
-                              mr="4"
-                              fontSize="16"
-                              _groupHover={{
-                                color: "white",
-                              }}
-                              as={link.icon}
-                            />
-                          }
-                          {link.name}
-                        </Flex>
-                      </Link>
+                      <a
+                      onClick={() => {
+                        window.open(
+                          "https://drive.google.com/file/d/1lFycavzJaYExlcNPBhWmXXuKScE6WGY3/view?usp=sharing",
+                          "blank"
+                        );
+                      }}
+                      className="nav-link resume"
+                      id="resume-button-1"
+                      href={Resume}
+                      download="Arpit-Kumar-Resume"
+                      px={2}
+                      py={1}
+                      rounded={"md"}
+                      _hover={{
+                        textDecoration: "none",
+                      }}>
+                      Resume
+                    </a>
                     ) : (
                       <NavItem
                         key={link.name}

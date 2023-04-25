@@ -10,8 +10,7 @@ import {
 } from "@chakra-ui/react";
 import { Link } from "react-scroll";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
-import { Fragment } from "react";
-
+import { Center } from "@chakra-ui/react";
 import About from "../about";
 import SideDrawerNavbar from "./SideDrawerNavbar";
 import Resume from "../../resume/Arpit-Kumar-Resume.pdf";
@@ -217,9 +216,9 @@ export default function Simple() {
         <Skills />
         <GithubStats />
         <Projects />
-        <Fragment>
+        <Center>
           <Contact />
-        </Fragment>
+        </Center>
       </Box>
   
     </Box>
