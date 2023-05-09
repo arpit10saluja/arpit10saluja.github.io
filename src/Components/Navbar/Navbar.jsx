@@ -6,23 +6,15 @@ import {
   useColorModeValue,
   useColorMode,
   Text,
-  Container,
 } from "@chakra-ui/react";
 import { Link } from "react-scroll";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
-import { Center } from "@chakra-ui/react";
-import About from "../about";
 import SideDrawerNavbar from "./SideDrawerNavbar";
 import Resume from "../../resume/Arpit-Kumar-Resume.pdf";
-import Skills from "../skills";
-import GithubStats from "../github_stats";
-import Projects from "../projects/Projects";
-import Contact from "../contactForm/Contact";
-import Home from "../Home";
 
 // const Links = ["Home","About", "Skills", "Projects", "Contact", "Resume",];
 
-export default function Simple() {
+export default function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
     <Box w="100%" overflowX="hidden" id="nav-menu">
@@ -35,7 +27,8 @@ export default function Simple() {
         position="fixed"
         top={0}
         width="100%"
-        zIndex={1001}>
+        zIndex={1001}
+      >
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <SideDrawerNavbar />
           <HStack spacing={8} alignItems={"center"}>
@@ -43,11 +36,11 @@ export default function Simple() {
               ml={"40px"}
               as={"nav"}
               spacing={10}
-              display={{ base: "none", md: "flex" }}>
-
-            // Home Link
+              display={{ base: "none", md: "flex" }}
+            >
+              {/* // Home Link */}
               <Link
-                id="nav-link.home"
+                id="nav-link home"
                 className="nav-link home"
                 to={"Home"}
                 smooth={true}
@@ -57,20 +50,22 @@ export default function Simple() {
                 rounded={"md"}
                 _hover={{
                   textDecoration: "none",
-                }}>
+                }}
+              >
                 <Text
                   cursor={"pointer"}
                   _hover={{
                     color: "red",
                   }}
                   fontSize="18px"
-                  fontWeight="semibold">
+                  fontWeight="semibold"
+                >
                   {" "}
                   {"Home"}
                 </Text>
               </Link>
 
-              // About Link
+              {/* // About Link */}
               <Link
                 className="nav-link about"
                 to={"about"}
@@ -81,21 +76,22 @@ export default function Simple() {
                 rounded={"md"}
                 _hover={{
                   textDecoration: "none",
-                }}>
+                }}
+              >
                 <Text
                   cursor={"pointer"}
                   _hover={{
                     color: "red",
                   }}
                   fontSize="18px"
-                  fontWeight="semibold">
+                  fontWeight="semibold"
+                >
                   {" "}
                   {"About"}
                 </Text>
               </Link>
 
-
-              //Skills  Link
+              {/* //Skills  Link */}
               <Link
                 className="nav-link skills"
                 to={"Skills"}
@@ -106,20 +102,22 @@ export default function Simple() {
                 rounded={"md"}
                 _hover={{
                   textDecoration: "none",
-                }}>
+                }}
+              >
                 <Text
                   cursor={"pointer"}
                   _hover={{
                     color: "red",
                   }}
                   fontSize="18px"
-                  fontWeight="semibold">
+                  fontWeight="semibold"
+                >
                   {" "}
                   {"Skills"}
                 </Text>
               </Link>
 
-              //Projects  Link
+              {/* //Projects  Link */}
               <Link
                 className="nav-link projects"
                 to={"Projects"}
@@ -130,20 +128,22 @@ export default function Simple() {
                 rounded={"md"}
                 _hover={{
                   textDecoration: "none",
-                }}>
+                }}
+              >
                 <Text
                   cursor={"pointer"}
                   _hover={{
                     color: "red",
                   }}
                   fontSize="18px"
-                  fontWeight="semibold">
+                  fontWeight="semibold"
+                >
                   {" "}
                   {"Projects"}
                 </Text>
               </Link>
 
-              //Contact  Link
+              {/* //Contact  Link */}
               <Link
                 className="nav-link contact"
                 to={"Contact"}
@@ -154,48 +154,51 @@ export default function Simple() {
                 rounded={"md"}
                 _hover={{
                   textDecoration: "none",
-                }}>
+                }}
+              >
                 <Text
                   cursor={"pointer"}
                   _hover={{
                     color: "red",
                   }}
                   fontSize="18px"
-                  fontWeight="semibold">
+                  fontWeight="semibold"
+                >
                   {" "}
                   {"Contact"}
                 </Text>
               </Link>
-
-// Resume Link
+              {/* 
+// Resume Link */}
               <Text
-                  _hover={{
-                    color: "red",
-                  }}
-                  fontSize="18px"
-                  fontWeight="semibold"> 
-              <a
-                onClick={() => {
-                  window.open(
-                    "https://drive.google.com/file/d/1lFycavzJaYExlcNPBhWmXXuKScE6WGY3/view?usp=sharing",
-                    "blank"
-                  );
-                }}
-                className="nav-link resume"
-                id="resume-button-1"
-                href={Resume}
-                download="Arpit-Kumar-Resume"
-                px={2}
-                py={1}
-                rounded={"md"}
                 _hover={{
-                  textDecoration: "none",
-                }}>
-                Resume
-              </a>
+                  color: "red",
+                }}
+                fontSize="18px"
+                fontWeight="semibold"
+                className="nav-link resume"
+              >
+                <a
+                  onClick={() => {
+                    window.open(
+                      "https://drive.google.com/file/d/1lFycavzJaYExlcNPBhWmXXuKScE6WGY3/view?usp=sharing",
+                      "blank"
+                    );
+                  }}
+                  className="nav-link resume"
+                  id="resume-button-1"
+                  href={Resume}
+                  download="Arpit-Kumar-Resume"
+                  px={2}
+                  py={1}
+                  rounded={"md"}
+                  _hover={{
+                    textDecoration: "none",
+                  }}
+                >
+                  Resume
+                </a>
               </Text>
-
-            
             </HStack>
           </HStack>
           <Box alignItems={"center"} mr="20px">
@@ -203,29 +206,16 @@ export default function Simple() {
               onClick={toggleColorMode}
               variant="ghost"
               fontSize="20px"
-              fontWeight="semibold">
+              fontWeight="semibold"
+            >
               {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
             </Button>
           </Box>
         </Flex>
       </Box>
-      <Box w="full" margin={"auto"}>
-        <Home>
-          <About />
-        </Home>
-        <Skills />
-        <GithubStats />
-        <Projects />
-        <Center>
-          <Contact />
-        </Center>
-      </Box>
-  
     </Box>
   );
 }
-
-
 
 // {Links.map((link) => (
 //   <>
@@ -283,5 +273,5 @@ export default function Simple() {
 //         </Link>
 //       </>
 //     )}
-//   </>  
+//   </>
 // ))}

@@ -54,7 +54,7 @@ export default function About() {
           <p id="user-detail-intro">
           A aspiring and self motivated full stack web developer with
           expertise in creating ready to use website. Team
-          collaborator with good interpersonal skill, Looking for a
+          collaborator with good interpersonal skill and tech skills such as Reach.js, Node.js, JavaScript, HTML, CSS and some more. Looking for a
           challenging role in a tech driven organisation.
           </p>
 
