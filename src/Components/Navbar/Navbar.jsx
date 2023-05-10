@@ -146,6 +146,7 @@ export default function Navbar() {
               {/* //Contact  Link */}
               <Link
                 className="nav-link contact"
+                
                 to={"Contact"}
                 smooth={true}
                 duration={500}
@@ -158,11 +159,13 @@ export default function Navbar() {
               >
                 <Text
                   cursor={"pointer"}
+                 al={"center"}
                   _hover={{
                     color: "red",
                   }}
                   fontSize="18px"
                   fontWeight="semibold"
+                  marginTop={"-28.5px"}
                 >
                   {" "}
                   {"Contact"}

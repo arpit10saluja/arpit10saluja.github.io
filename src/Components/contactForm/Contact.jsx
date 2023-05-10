@@ -23,8 +23,8 @@ const Contact = () => {
               <div className="column">
                 <div className="contact-widget ">
                   <div className="contact-widget-item">
-                    <div className="icon">
-                     <FontAwesomeIcon icon="fa-regular fa-location-dot" style={{color: "#000000",}} />
+                    <div className="icon" style={{backgroundColor:"#5084e4"}}>
+                     <FontAwesomeIcon icon="fa-regular fa-location-dot" style={{backgroundColor: "white",}} />
                     </div>
                     <div className="text">
                       <h5>Address</h5>
@@ -33,7 +33,7 @@ const Contact = () => {
                   </div>
 
                   <div className="contact-widget-item">
-                    <div className="icon">
+                    <div className="icon" style={{backgroundColor:"#5084e4"}}>
                       <i className="fa-solid fa-phone"></i>
                     </div>
                     <div className="text" id="contact-phone">
@@ -43,7 +43,7 @@ const Contact = () => {
                   </div>
 
                   <div className="contact-widget-item">
-                    <div className="icon">
+                    <div className="icon" style={{backgroundColor:"#5084e4"}}>
                       <i className="fa-regular fa-envelope"></i>
                     </div>
                     <div className="text" id="contact-email">
@@ -52,7 +52,7 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="contact-widget-item">
-                    <div className="icon">
+                    <div className="icon" style={{backgroundColor:"#5084e4"}}>
                       <i className="fa-regular fa-envelope"></i>
                     </div>
                     <div className="text" id="contact-github">
@@ -61,7 +61,7 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="contact-widget-item">
-                    <div className="icon">
+                    <div className="icon" style={{backgroundColor:"#5084e4"}}>
                       <i className="fa-regular fa-envelope"></i>
                     </div>
                     <div className="text" id="contact-linkedin">
