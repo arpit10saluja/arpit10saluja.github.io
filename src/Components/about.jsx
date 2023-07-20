@@ -14,7 +14,7 @@ export default function About() {
 
   return (
     <div id="about" className="about section">
-      <Text textAlign={'center'} fontSize={'4xl'}>About</Text>
+      {/* <Text textAlign={'center'} fontSize={'4xl'}>About</Text> */}
       <div id="about" className={style.about}>
         <div className={style.image}>
           {/* <BookType /> */}
