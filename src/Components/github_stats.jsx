@@ -61,9 +61,6 @@ export default function GithubStats() {
             />
     </div>
       
-   
-
-
 
       <div className={style.outer_box}>
       
