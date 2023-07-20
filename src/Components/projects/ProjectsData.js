@@ -184,4 +184,58 @@ export const projectsData = [
     link: "https://youtube-clone-arpit10saluja.netlify.app/",
     github: "https://github.com/arpit10saluja/YouTube-clone",
   },
+  {
+    project_img: "",
+    project_img_dark: "",
+    title: "",
+    description:
+      "",
+    tech_stack: [
+      {
+        url: "https://cdn-icons-png.flaticon.com/512/732/732212.png",
+        name: "html",
+      },
+      {
+        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png",
+        name: "css",
+      },
+      {
+        url: "https://icon-library.com/images/javascript-icon-png/javascript-icon-png-23.jpg",
+        name: "js",
+      },
+      {
+        url: "https://cdn-icons-png.flaticon.com/512/25/25231.png",
+        name: "github",
+      },
+    ],
+    link: "",
+    github: "",
+  },
+  {
+    project_img: "",
+    project_img_dark: "",
+    title: "",
+    description:
+      "",
+    tech_stack: [
+      {
+        url: "https://cdn-icons-png.flaticon.com/512/732/732212.png",
+        name: "html",
+      },
+      {
+        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png",
+        name: "css",
+      },
+      {
+        url: "https://icon-library.com/images/javascript-icon-png/javascript-icon-png-23.jpg",
+        name: "js",
+      },
+      {
+        url: "https://cdn-icons-png.flaticon.com/512/25/25231.png",
+        name: "github",
+      },
+    ],
+    link: "",
+    github: "",
+  }
 ];

@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import Resume from "../resume/Arpit-Kumar-Resume.pdf";
-import { Text } from "@chakra-ui/react";
+import { Button, Text } from "@chakra-ui/react";
 
 export default function About() {
   React.useEffect(() => {
@@ -14,7 +14,7 @@ export default function About() {
 
   return (
     <div id="about" className="about section">
-      {/* <Text textAlign={'center'} fontSize={'4xl'}>About</Text> */}
+      <Text textAlign={'center'} fontSize={'4xl'}>About</Text>
       <div id="about" className={style.about}>
         <div className={style.image}>
           {/* <BookType /> */}
@@ -53,7 +53,7 @@ export default function About() {
               </div>
             </div>
           </div>
-            <h3 id="">About</h3>
+            {/* <h3 id="">About</h3> */}
           <p id="user-detail-intro">
             A aspiring and self motivated full stack web developer with
             expertise in creating ready to use website. Team collaborator with
@@ -62,12 +62,12 @@ export default function About() {
             in a tech driven organisation.
           </p>
 
-          <div>
+          <div style={{"display":"flex", flexWrap:"nowrap", justifyContent:"center", alignItems:"center"}}>
             {" "}
             {/* <Button
-              className="nav-link resume"
+              // className="nav-link resume"
               id="resume-button-2"
-              // className={styles.a}
+              className={style.ResumeBtn}
               onClick={() => {
                 window.open(
                   "https://drive.google.com/file/d/1lFycavzJaYExlcNPBhWmXXuKScE6WGY3/view?usp=sharing",
@@ -81,7 +81,7 @@ export default function About() {
                 id="resume-link-2"
                 href={Resume}
                 target="_blank"
-                className={style.ResumeBtn}
+                // className={style.ResumeBtn}
                 rel="noreferrer"
                 download="Arpit-Kumar-Resume.pdf"
               >
@@ -100,10 +100,11 @@ export default function About() {
               id="resume-button-2"
               href={Resume}
               download="Arpit-Kumar-Resume"
-              className={style.ResumeBtn}>
+              className={style.ResumeBtn}
+              >
             <span></span>
             <span></span>
-            <span></span>
+            <span></span> 
             <span></span>
             Resume
           </a>
