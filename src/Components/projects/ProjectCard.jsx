@@ -27,7 +27,7 @@ const ProjectCard = ({
   React.useEffect(() => {
     AOS.init();
   }, []);
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode } = useColorMode();
 
   return (
     <div className="project-card">
@@ -59,7 +59,8 @@ const ProjectCard = ({
         <HStack marginBottom="1rem" className="project-tech-stack">
           {tech_stack.map((tech) => (
        
-            <Image 
+            <Image  
+            key={tech.name}
             h={{ base: "24px", md: "32px" }}
             w={{ base: "24px", md: "32px" }}
             src={tech.url}

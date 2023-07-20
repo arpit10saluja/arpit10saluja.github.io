@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import Resume from "../resume/Arpit-Kumar-Resume.pdf";
-import { Button, Text } from "@chakra-ui/react";
+import { Text } from "@chakra-ui/react";
 
 export default function About() {
   React.useEffect(() => {

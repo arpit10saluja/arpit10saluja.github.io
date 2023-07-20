@@ -19,6 +19,7 @@ const Projects = () => {
         gap={{ base: "2rem", md: "4rem" }}>
         {projectsData.map((project, i) => (
           <ProjectCard
+          key={i}
             index={i}
             project_img={project.project_img}
             project_img_dark={project.project_img_dark}

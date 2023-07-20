@@ -15,9 +15,9 @@ import {
 import {
   FiHome,
   FiTrendingUp,
-  FiCompass,
-  FiStar,
-  FiSettings,
+  // FiCompass,
+  // FiStar,
+  // FiSettings,
 } from "react-icons/fi";
 import { GoProject } from "react-icons/go";
 import { MdContacts } from "react-icons/md";
@@ -79,10 +79,10 @@ function SideDrawerNavbar() {
           <DrawerBody>
             <Box pb={4}>
               <Stack as={"nav"} spacing={4}>
-                {Links.map((link) => (
-                  <>
+                {Links.map((link, index) => (
+                  <div key={index}>
                     {link.name === "Resume" ? (
-                      <a
+                      <a 
                       onClick={() => {
                         window.open(
                           "https://drive.google.com/file/d/1lFycavzJaYExlcNPBhWmXXuKScE6WGY3/view?usp=sharing",
@@ -109,7 +109,7 @@ function SideDrawerNavbar() {
                         {link.name}
                       </NavItem>
                     )}
-                  </>
+                  </div>
                 ))}
               </Stack>
             </Box>
