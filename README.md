@@ -1,6 +1,3 @@
 
 
-this is my portfolio ekeoeoenene
-sjdd
-
-dkkddkmde
+this is my portfolio
