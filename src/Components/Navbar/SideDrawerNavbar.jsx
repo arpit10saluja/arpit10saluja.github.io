@@ -157,6 +157,6 @@ const NavItem = ({ icon, children, onClose, ...rest }) => {
     </Link>
   );
 };
-//export 
+//export the component
 
 export default SideDrawerNavbar;
