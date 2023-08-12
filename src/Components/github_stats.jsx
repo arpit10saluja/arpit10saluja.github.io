@@ -61,7 +61,6 @@ export default function GithubStats() {
             />
     </div>
       
-
       <div className={style.outer_box}>
       
           <h1 className={style.main_heading}>My Github Calender</h1>
