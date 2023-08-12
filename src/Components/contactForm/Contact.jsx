@@ -1,16 +1,16 @@
 import React, { Fragment } from "react";
 import "./Contact.css";
-import { useColorMode } from "@chakra-ui/react";
+// import { useColorMode } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Contact = () => {
-  const { colorMode } = useColorMode();
+  // const { colorMode } = useColorMode();
 
   return (
     <div id="contact">
 
-    <div id="Contact" style={{ color: "black" }}>
+    <div id="Contact">
       {" "}
       <Fragment>
         <section className="contact">
