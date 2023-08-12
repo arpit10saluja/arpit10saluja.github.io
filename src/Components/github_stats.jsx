@@ -5,8 +5,8 @@ import React from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useColorMode } from "@chakra-ui/react";
-import { useEffect } from "react";
-import { useState } from "react";
+// import { useEffect } from "react";
+// import { useState } from "react";
 
 export default function GithubStats() {
   React.useEffect(() => {
