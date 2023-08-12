@@ -77,7 +77,11 @@ export default function GithubStats() {
         <div className={style.graph}>
        
             <img
-              src="https://github-readme-activity-graph.cyclic.app/graph?username=arpit10saluja&theme=gotham"
+              src={
+                colorMode === "dark"
+                  ? "https://github-readme-activity-graph.vercel.app/graph?username=arpit10saluja&theme=gotham"
+                  : "https://github-readme-activity-graph.vercel.app/graph?username=arpit10saluja&theme=github-light"
+              }
               alt=""
             />
       
