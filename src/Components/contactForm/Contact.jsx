@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import "./Contact.css";
 // import { useColorMode } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
+// import { Icon } from "@chakra-ui/icons";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Contact = () => {
@@ -23,10 +24,7 @@ const Contact = () => {
               <div className="column">
                 <div className="contact-widget ">
                   <div className="contact-widget-item">
-                    <div className="icon" style={{backgroundColor:"#5084e4"}}>
-                     {/* <FontAwesomeIcon icon="fa-regular fa-location-dot" style={{backgroundColor: "white",}} /> */}
-                     {/* <FontAwesomeIcon icon="fa-solid fa-location-dot" style={{color: "#030408",}} /> */}
-                     <i class="fa-solid fa-location-dot" style={{color: "#030408"}}></i>
+                    <div className="icon" >
                     </div>
                     <div className="text">
                       <h5>Address</h5>

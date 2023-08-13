@@ -245,35 +245,35 @@ export const projectsData = [
     link: "https://fitfusion.vercel.app/",
     github: "https://github.com/arpit10saluja/fitfusion",
   },
-  {
-    project_img:
-      "",
-    project_img_dark:
-      "",
-    title: "Code Converter",
-    description:
-      "",
-    tech_stack: [
-      {
-        url: "https://cdn-icons-png.flaticon.com/512/732/732212.png",
-        name: "html",
-      },
-      {
-        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png",
-        name: "css",
-      },
-      {
-        url: "https://icon-library.com/images/javascript-icon-png/javascript-icon-png-23.jpg",
-        name: "js",
-      },
-      {
-        url: "https://cdn-icons-png.flaticon.com/512/25/25231.png",
-        name: "github",
-      },
-    ],
-    link: "",
-    github: "",
-  },
+  // {
+  //   project_img:
+  //     "",
+  //   project_img_dark:
+  //     "",
+  //   title: "Code Converter",
+  //   description:
+  //     "",
+  //   tech_stack: [
+  //     {
+  //       url: "https://cdn-icons-png.flaticon.com/512/732/732212.png",
+  //       name: "html",
+  //     },
+  //     {
+  //       url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png",
+  //       name: "css",
+  //     },
+  //     {
+  //       url: "https://icon-library.com/images/javascript-icon-png/javascript-icon-png-23.jpg",
+  //       name: "js",
+  //     },
+  //     {
+  //       url: "https://cdn-icons-png.flaticon.com/512/25/25231.png",
+  //       name: "github",
+  //     },
+  //   ],
+  //   link: "",
+  //   github: "",
+  // },
   {
     project_img: "https://user-images.githubusercontent.com/104666876/238126388-239de8ab-8642-4058-a53e-31bf43f08624.png",
     project_img_dark: "https://user-images.githubusercontent.com/104666876/238126388-239de8ab-8642-4058-a53e-31bf43f08624.png",
@@ -320,33 +320,33 @@ export const projectsData = [
     link: "",
     github: "",
   },
-  {
-    project_img:
-      "",
-    project_img_dark:
-      "",
-    title: "Joke Generator",
-    description:
-      "",
-    tech_stack: [
-      {
-        url: "https://cdn-icons-png.flaticon.com/512/732/732212.png",
-        name: "html",
-      },
-      {
-        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png",
-        name: "css",
-      },
-      {
-        url: "https://icon-library.com/images/javascript-icon-png/javascript-icon-png-23.jpg",
-        name: "js",
-      },
-      {
-        url: "https://cdn-icons-png.flaticon.com/512/25/25231.png",
-        name: "github",
-      },
-    ],
-    link: "",
-    github: "",
-  },
+  // {
+  //   project_img:
+  //     "",
+  //   project_img_dark:
+  //     "",
+  //   title: "Joke Generator",
+  //   description:
+  //     "",
+  //   tech_stack: [
+  //     {
+  //       url: "https://cdn-icons-png.flaticon.com/512/732/732212.png",
+  //       name: "html",
+  //     },
+  //     {
+  //       url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png",
+  //       name: "css",
+  //     },
+  //     {
+  //       url: "https://icon-library.com/images/javascript-icon-png/javascript-icon-png-23.jpg",
+  //       name: "js",
+  //     },
+  //     {
+  //       url: "https://cdn-icons-png.flaticon.com/512/25/25231.png",
+  //       name: "github",
+  //     },
+  //   ],
+  //   link: "",
+  //   github: "",
+  // },
 ];
